@@ -5,7 +5,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import { Translate } from '@mui/icons-material';
 import {selectCars} from "../features/car/carSlice";
 import { useSelector } from "react-redux"
-import Home from '../Screens/home'
+
 
 
 
@@ -41,11 +41,11 @@ function Header() {
        
           <ModelCar>
             {cars && cars.map((car, index)=>(
-              <li><a key={index} href='#'>{ car }</a></li>
+              <li><a key={index} href="">{ car }</a></li>
             ))}
           </ModelCar>
           
-          <li><a href="">Existing Inventory</a></li>
+          <li><a href="../Pages/inventory.js">Existing Inventory</a></li>
           <li><a href="">Used Inventory</a></li>
           <li><a href="">Trade-In</a></li>
           <li><a href="">Test Drive</a></li>
